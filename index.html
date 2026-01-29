@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +8,32 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
 <title>Title</title>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
     <section class="row">
 
     
     <form>
         <legend>Megnézendő Filmek</legend>
         <div class="col-12">
-            <label for=""></label>
+            <label for="">Film Címe</label>
+            <input type="text" id="cim">
+
+            <label for="">Film műfaja</label>
+            <select name="" id="dropdown">
+                <option value="horror" >Horror</option>
+                <option value="scifi">Sci-Fi</option>
+                <option value="drama">Dráma</option>
+                <option value="akcio">Akció</option>
+            </select>
         </div>
     </form>
     
     </section>
-    </div>
+    </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
