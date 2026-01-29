@@ -19,6 +19,14 @@ gomb.addEventListener("click", function(){
         alert("Kérem válasszon műfajt.")
         return
     }
+    if (cim == ""){
+        alert("Kérem adjon meg címet.")
+        return
+    }
+    if (url == ""){
+        alert("Kérem adjon meg kép urlt.")
+        return
+    }
 
 
     let prevSection = document.getElementById((id - 1).toString());
