@@ -3,9 +3,9 @@ html, body {
     overflow-y: auto;
 }
 main{
-    background-color: rgba(74, 74, 74, 0.5); /* áttetsző háttér */
+    background-color: rgba(74, 74, 74, 0.5);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border: none; /* border eltávolítása */
+    border: none; 
     padding: 10px;
     border-radius: 15px;
     margin-top: 3rem;
