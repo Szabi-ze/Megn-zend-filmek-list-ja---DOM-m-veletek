@@ -19,16 +19,18 @@
     <form>
         <legend>Megnézendő Filmek</legend>
         <div class="col-12">
-            <label for="">Film Címe</label>
-            <input type="text" id="cim">
+            <fieldset class="row w-50 d-flex">
+                <label for="cim" class="form-label">Film Címe</label>
+                <input type="text" id="cim" class="form-control">
 
-            <label for="">Film műfaja</label>
-            <select name="" id="dropdown">
-                <option value="horror" >Horror</option>
-                <option value="scifi">Sci-Fi</option>
-                <option value="drama">Dráma</option>
-                <option value="akcio">Akció</option>
-            </select>
+                <label for="">Film műfaja</label>
+                <select name="" id="dropdown" class="form-control">
+                    <option value="horror" >Horror</option>
+                    <option value="scifi">Sci-Fi</option>
+                    <option value="drama">Dráma</option>
+                    <option value="akcio">Akció</option>
+                </select>
+            </fieldset>
         </div>
     </form>
     
