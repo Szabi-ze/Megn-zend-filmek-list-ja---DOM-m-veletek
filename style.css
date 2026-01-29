@@ -1,9 +1,15 @@
 main{
-    background-color: orangered;
+    background-color: rgb(101, 176, 255);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     padding: 10px;
+    border-radius: 15px;
+    margin-top: 15%;
 }
-legend{
+h1{
     text-align: center;
 }
+body{
+    background-color: rgb(219, 219, 219);
+}
+

@@ -9,7 +9,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="style.css">
-<title>Title</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Megnézendő Filmek</title>
 </head>
 <body>
     <main class="container">
@@ -17,19 +18,28 @@
 
     
     <form>
-        <legend>Megnézendő Filmek</legend>
+        <h1>Megnézendő Filmek</h1>
         <div class="col-12">
-            <fieldset class="row w-50 d-flex">
-                <label for="cim" class="form-label">Film Címe</label>
-                <input type="text" id="cim" class="form-control">
+            <fieldset class="row w-50 d-flex justify-content-center">
+                <div class="col-12">
+                    <label for="cim" class="form-label">Film Címe</label>
+                    <input type="text" id="cim" class="form-control">
+                </div>
 
-                <label for="">Film műfaja</label>
+                <div class="col-12">
+                <label for="dropdown">Film műfaja</label>
                 <select name="" id="dropdown" class="form-control">
+                    <option value="" >Válassz!</option>
                     <option value="horror" >Horror</option>
                     <option value="scifi">Sci-Fi</option>
                     <option value="drama">Dráma</option>
                     <option value="akcio">Akció</option>
                 </select>
+                </div>
+                <div class="col-12 ">
+                    <label for="url">Kép URL</label>
+                    <input type="url" id="url" class="form-control">
+                </div>
             </fieldset>
         </div>
     </form>
