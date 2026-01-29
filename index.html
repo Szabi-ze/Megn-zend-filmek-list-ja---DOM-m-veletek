@@ -19,33 +19,59 @@
     
     <form>
         <h1>Megnézendő Filmek</h1>
-        <div class="col-12">
-            <fieldset class="row w-50 d-flex justify-content-center">
-                <div class="col-12">
+
+            <fieldset class="row w-50">
+                <div class="col-4">
                     <label for="cim" class="form-label">Film Címe</label>
                     <input type="text" id="cim" class="form-control">
                 </div>
 
-                <div class="col-12">
+                <div class="col-4">
                 <label for="dropdown">Film műfaja</label>
                 <select name="" id="dropdown" class="form-control">
                     <option value="" >Válassz!</option>
-                    <option value="horror" >Horror</option>
+                    <option value="horror">Horror</option>
                     <option value="scifi">Sci-Fi</option>
                     <option value="drama">Dráma</option>
                     <option value="akcio">Akció</option>
                 </select>
                 </div>
-                <div class="col-12 ">
+                <div class="col-4 ">
                     <label for="url">Kép URL</label>
                     <input type="url" id="url" class="form-control">
                 </div>
             </fieldset>
-        </div>
+            <input value="Gomb puca" id="gombpuca" type="button">
     </form>
     
     </section>
+
+    
+
     </main>
+
+    <!-- debug puca -->
+    <div class="row">
+    <div class="card mt-5 col-4">
+        <h1>Puca1</h1>
+        <p>Kis puca film</p>
+        <a target="_blank" href="https://optimustenyo.hu">Sigma</a>
+        <img src="" alt="">
+    </div>
+         
+    <div class="card mt-5 col-4">
+        <h1>Puca1</h1>
+        <p>Kis puca film</p>
+        <a target="_blank" href="https://optimustenyo.hu">Sigma</a>
+    </div>
+         
+    <div class="card mt-5 col-4">
+        <h1>Puca1</h1>
+        <p>Kis puca film</p>
+        <a target="_blank" href="https://optimustenyo.hu">Sigma</a>
+    </div>
+
+    </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
