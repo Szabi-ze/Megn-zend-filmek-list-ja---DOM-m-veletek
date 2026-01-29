@@ -8,13 +8,21 @@ let gomb = document.getElementById("gombpuca");
 
 
 let id = 0
-let darab = 3
+
 
 gomb.addEventListener("click", function(){
     let cim = document.getElementById("cim").value;
     let dropdown = document.getElementById("dropdown").value;
     let url = document.getElementById("url").value;
-    if(document.getElementById((id - 1).toString()).childNodes.length == 3){
+    
+    if (dropdown == ""){
+        alert("Kérem válasszon műfajt.")
+        return
+    }
+
+
+    let prevSection = document.getElementById((id - 1).toString());
+    if(prevSection == null || prevSection.childNodes.length == 4){
         let section = document.createElement("section")
         section.className = "row"
         section.id = id
@@ -50,7 +58,7 @@ gomb.addEventListener("click", function(){
         body.append(section)
  
 
-        darab = 0;
+   
     } else{
         let sectionElem = document.getElementById((id - 1).toString());
         let div = document.createElement("div")
@@ -81,7 +89,7 @@ gomb.addEventListener("click", function(){
         sectionElem.append(div)
         
         body.append(sectionElem)
-        darab++;
+
     }
     
 })
