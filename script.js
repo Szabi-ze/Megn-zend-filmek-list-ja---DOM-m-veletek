@@ -1,12 +1,7 @@
 
 let body = document.body
-
-let cim = document.getElementById("cim").value;
-let dropdown = document.getElementById("dropdown").value;
-let url = document.getElementById("url").value;
 let gomb = document.getElementById("gombpuca");
 
-let div = document.createElement("div")
 
 
 
@@ -20,16 +15,31 @@ gomb.addEventListener("click", function(){
         let section = document.createElement("section")
         section.className = "row"
         section.id = id
-        body.append(section)
+
+        let cim = document.getElementById("cim").value;
+        let dropdown = document.getElementById("dropdown").value;
+        let url = document.getElementById("url").value;
+        
+
 
         let div = document.createElement("div")
         let h1 = document.createElement("h1")
         let p = document.createElement("p")
-        let img = document
+        let img = document.createElement("img")
 
         h1.innerText = cim
-        p.innerText = url
+        p.innerText = dropdown
+        img.src = url
 
+        div.append(h1)
+        div.append(p)
+        div.append(img)
+
+        div.className = "card"
+
+        section.append(div)
+        
+        body.append(section)
         alert("sigma")
     }
     
@@ -39,7 +49,7 @@ gomb.addEventListener("click", function(){
 
 
 
-div.className = "card"
+
 
 
 
