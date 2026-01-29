@@ -14,7 +14,7 @@ gomb.addEventListener("click", function(){
     let cim = document.getElementById("cim").value;
     let dropdown = document.getElementById("dropdown").value;
     let url = document.getElementById("url").value;
-    if(darab == 3){
+    if(document.getElementById((id - 1).toString()).childNodes.length == 3){
         let section = document.createElement("section")
         section.className = "row"
         section.id = id
