@@ -1,10 +1,25 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 main{
     background-color: rgb(101, 176, 255);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: 2px solid rgb(255, 255, 255);
     padding: 10px;
     border-radius: 15px;
-    margin-top: 15%;
+    margin-top: 3rem;
+}
+form fieldset.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+}
+form fieldset .col-md-4 {
+    flex: 1 1 0;
+    min-width: 220px;
+    margin-bottom: 0;
 }
 h1{
     text-align: center;
@@ -16,7 +31,33 @@ body{
     margin-top: 10px;
     border: 2px solid black;
     border-radius: 5px;
-    background-color: greenyellow;
-    
+    background-color: lightgreen;
+    transition: transform 0.2s;
     
 }
+
+
+#gombpuca:hover{
+    transform: scale(1.1);
+    background-color: greenyellow;
+}
+
+.card{
+    border: 3px solid black;
+    border-radius: 10px;
+    display: block;
+    justify-content: justify;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.card > img{
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.card p{
+    font-size: 20px;
+    text-align: center;
+}
+.card >

@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="style.css">
+
 <link rel="icon" type="image/png" href="favicon.png">
 <title>Megnézendő Filmek</title>
 </head>
@@ -20,15 +21,16 @@
     <form>
         <h1>Megnézendő Filmek</h1>
 
-            <fieldset class="row w-50">
-                <div class="col-4">
+            <fieldset class="row">
+
+                <div class="col-md-4">
                     <label for="cim" class="form-label">Film Címe</label>
                     <input type="text" id="cim" class="form-control">
                 </div>
 
-                <div class="col-4">
+                <div class="col-md-4">
                 <label for="dropdown">Film műfaja</label>
-                <select name="" id="dropdown" class="form-control">
+                <select name="cdrop" id="dropdown" class="form-control">
                     <option value="" >Válassz!</option>
                     <option value="horror">Horror</option>
                     <option value="scifi">Sci-Fi</option>
@@ -36,12 +38,12 @@
                     <option value="akcio">Akció</option>
                 </select>
                 </div>
-                <div class="col-4 ">
+                <div class="col-md-4 ">
                     <label for="url">Kép URL</label>
                     <input type="url" id="url" class="form-control">
                 </div>
             </fieldset>
-            <input value="Gomb puca" id="gombpuca" type="button">
+            <input value="Gomb puca" id="gombpuca" type="button" class="mx-auto d-block">
     </form>
     
     </section>
@@ -52,23 +54,31 @@
 
     <!-- debug puca -->
     <div class="row">
-    <div class="card mt-5 col-4">
+    <div class="card mt-5 col-md-6 col-sm-12">
         <h1>Puca1</h1>
         <p>Kis puca film</p>
-        <a target="_blank" href="https://optimustenyo.hu">Sigma</a>
-        <img src="" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQDbX_QD0FLZUeMkwDptpFsI0_JdMLslUtwA&s" alt="">
+        <input value="Törlés" type="button">
     </div>
          
-    <div class="card mt-5 col-4">
+    <div class="card mt-5 col-md-6 col-sm-12">
         <h1>Puca1</h1>
         <p>Kis puca film</p>
-        <a target="_blank" href="https://optimustenyo.hu">Sigma</a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQDbX_QD0FLZUeMkwDptpFsI0_JdMLslUtwA&s" alt="">
+        <input value="Törlés" type="button">
     </div>
          
-    <div class="card mt-5 col-4">
+    <div class="card mt-5 col-md-6 col-sm-12">
         <h1>Puca1</h1>
         <p>Kis puca film</p>
-        <a target="_blank" href="https://optimustenyo.hu">Sigma</a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQDbX_QD0FLZUeMkwDptpFsI0_JdMLslUtwA&s" alt="">
+        <input value="Törlés" type="button">
+    </div>
+        <div class="card mt-5 col-md-6 col-sm-12" >
+        <h1>Puca1</h1>
+        <p>Kis puca film</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQDbX_QD0FLZUeMkwDptpFsI0_JdMLslUtwA&s" alt="">
+        <input value="Törlés" type="button">
     </div>
 
     </div>
