@@ -3,7 +3,7 @@ let body = document.body
 let gomb = document.getElementById("gombpuca");
 
 
-
+body.style.backgroundColor = "rgb(219, 219, 219)";
 
 
 
